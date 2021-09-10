@@ -371,10 +371,10 @@ if __name__ == '__main__':
     train_loader = dloader_train.get_dataloader()
     val_loader = dloader_val.get_dataloader()
 
-    if opt.luke_warm == 'True' and opt.classification == 'True':
-        num_epoch = opt.num_epoch + opt.stop_class_iter
-    else:
-        num_epoch = opt.num_epoch
+    # if opt.luke_warm == 'True' and opt.classification == 'True':
+        # num_epoch = opt.num_epoch + opt.stop_class_iter
+    # else:
+    num_epoch = opt.num_epoch
 
     # loss * opt.few_shot_loss_weight + loss_class * opt.classifier_loss_weight
 
